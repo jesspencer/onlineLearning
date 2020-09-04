@@ -14,7 +14,7 @@ Created on Thu Aug 20 16:47:13 2020
 
 @author: Spencer-Jessica-E
 """
-import os; os.chdir(r"C:\Users\Spencer-Jessica-E\Desktop\COPPER.RIVER\World_Bank_Dash")
+
 import pandas as pd
 import numpy as np
 import json
