@@ -1,4 +1,4 @@
-# Online Learning
+# Future of Online Learning Dashboard
 Interactive Tableau Dashboard, where the user has two dashboards the first oen displays the trends in online learning by region and country. While the second dashboard shows the future demand for online learning. The user is then able to go back and forth from the first and second dashboard with navigation buttons. Also, the users is able to filter each visual by color, region, and country name.   
 Online learning Tableau dashboard, (https://public.tableau.com/profile/jessica.spencer6802#!/vizhome/FutureofOnlineLearning_15992334579770/OnlineLearning/).
 
