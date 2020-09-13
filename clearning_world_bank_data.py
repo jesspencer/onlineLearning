@@ -23,7 +23,7 @@ import pandas as pd
 import numpy as np
 import json
 
-data_cfg_fp = 'cfg/config.json'
+data_cfg_fp = 'cfg/configg.json'
 
 
 class World():
