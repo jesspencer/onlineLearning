@@ -1,0 +1,3055 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0818.2120                               -->
+<workbook original-version='18.1' source-build='2019.2.3 (20192.19.0818.2120)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <CustomReferenceLineTooltips ignorable='true' predowngraded='true' />
+    <MapboxVectorStylesAndLayers />
+    <NavigationAction />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='FutureofOnlineLearning_15992334579770' path='/workbooks' revision='1.6' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Dimenension Selector ' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Country&quot;'>
+        <calculation class='tableau' formula='&quot;Country&quot;' />
+        <members>
+          <member value='&quot;Country&quot;' />
+          <member value='&quot;Region &quot;' />
+        </members>
+      </column>
+      <column caption='Chart Type' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+        <calculation class='tableau' formula='&quot;Bar&quot;' />
+        <members>
+          <member value='&quot;Bar&quot;' />
+          <member value='&quot;Map&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (Revised)' inline='true' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Revised' name='excel-direct.0ekc4gb15t9h6t1g5ba531w606u2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/JessicaSpencer/Documents/World Bank Dash/Revised.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0ekc4gb15t9h6t1g5ba531w606u2' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L1996:no:A1:L1996:0' header='yes' outcome='2'>
+            <column datatype='string' name='Series Code' ordinal='0' />
+            <column datatype='string' name='Series Name' ordinal='1' />
+            <column datatype='string' name='Country Name' ordinal='2' />
+            <column datatype='string' name='Country Code' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Mobile Cellular Subscriptions' ordinal='5' />
+            <column datatype='integer' name='Internet Usage Ratio' ordinal='6' />
+            <column datatype='integer' name='GDP' ordinal='7' />
+            <column datatype='integer' name='GDP Annual Growth' ordinal='8' />
+            <column datatype='integer' name='Secondary Enrollment' ordinal='9' />
+            <column datatype='integer' name='Electrical Power Consumption' ordinal='10' />
+            <column datatype='integer' name='Population' ordinal='11' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Series Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Series Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Series Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Series Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Series Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Series Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Name]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mobile Cellular Subscriptions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mobile Cellular Subscriptions]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Mobile Cellular Subscriptions</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Internet Usage Ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Internet Usage Ratio]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Internet Usage Ratio</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GDP]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GDP</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP Annual Growth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GDP Annual Growth]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GDP Annual Growth</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary Enrollment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Secondary Enrollment]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Secondary Enrollment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electrical Power Consumption</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electrical Power Consumption]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Electrical Power Consumption</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L1996:no:A1:L1996:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ranking' datatype='real' name='[Calculation_2098395973372608512]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg(1)' />
+      </column>
+      <column caption='Ratio' datatype='real' name='[Calculation_2171579466926657537]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='sum([Mobile Cellular Subscriptions])/sum([Internet Usage Ratio])' />
+      </column>
+      <column caption='v_Field_Selector' datatype='string' name='[Calculation_2171579466941743108]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] =&quot;Country&quot; THEN [Country Name]&#13;&#10;ELSEIF [Parameters].[Parameter 1] =&quot;Region&quot; THEN [Country Name (group)]&#13;&#10;END' />
+      </column>
+      <column caption='v_Chart_Type' datatype='string' name='[Calculation_2171579467002929158]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 2] =&quot;Bar&quot; THEN &quot;Bar&quot;&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Map&quot; THEN &quot;Map&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='v_Region' datatype='string' name='[Country Name (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+          <bin default-name='false' value='&quot;Asia&quot;'>
+            <value>&quot;China&quot;</value>
+            <value>&quot;India&quot;</value>
+            <value>&quot;Japan&quot;</value>
+            <value>&quot;Russian Federation&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Europe&quot;'>
+            <value>&quot;France&quot;</value>
+            <value>&quot;Germany&quot;</value>
+            <value>&quot;Italy&quot;</value>
+            <value>&quot;Netherlands&quot;</value>
+            <value>&quot;Spain&quot;</value>
+            <value>&quot;Switzerland&quot;</value>
+            <value>&quot;United Kingdom&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Latin America&quot;'>
+            <value>&quot;Argentina&quot;</value>
+            <value>&quot;Brazil&quot;</value>
+            <value>&quot;Mexico&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Middle East&quot;'>
+            <value>&quot;Saudi Arabia&quot;</value>
+            <value>&quot;Turkey&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;North America&quot;'>
+            <value>&quot;United States&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Oceania&quot;'>
+            <value>&quot;Australia&quot;</value>
+            <value>&quot;Indonesia&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[v_Region (copy)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+          <bin default-name='false' value='&quot;Asia&quot;'>
+            <value>&quot;China&quot;</value>
+            <value>&quot;India&quot;</value>
+            <value>&quot;Japan&quot;</value>
+            <value>&quot;Russian Federation&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Europe&quot;'>
+            <value>&quot;France&quot;</value>
+            <value>&quot;Germany&quot;</value>
+            <value>&quot;Italy&quot;</value>
+            <value>&quot;Netherlands&quot;</value>
+            <value>&quot;Spain&quot;</value>
+            <value>&quot;Switzerland&quot;</value>
+            <value>&quot;United Kingdom&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Latin America&quot;'>
+            <value>&quot;Argentina&quot;</value>
+            <value>&quot;Brazil&quot;</value>
+            <value>&quot;Mexico&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Middle East&quot;'>
+            <value>&quot;Saudi Arabia&quot;</value>
+            <value>&quot;Turkey&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;North America&quot;'>
+            <value>&quot;United States&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Oceania&quot;'>
+            <value>&quot;Australia&quot;</value>
+            <value>&quot;Indonesia&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+      <group caption='Set 1' name='[Set 1]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter expression='[Calculation_2171579466926657537] &gt;= 2.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+          <groupfilter function='level-members' level='[Country Name]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </group>
+      <group caption='Set 2' name='[Set 2]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='SUM([Population])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[Country Name]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group delimiter=',' name='[Set 3]' name-style='unqualified'>
+        <groupfilter function='intersection'>
+          <groupfilter field='[Set 1]' function='reference' />
+          <groupfilter field='[Set 2]' function='reference' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/JessicaSpencer/Documents/My Tableau Repository/Datasources/Sheet1 (Revised).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/04/2020 03:31:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Sheet1 (Revised)' increment-value='%null%' refresh-type='create' rows-inserted='1995' timestamp-start='2020-09-04 15:31:17.462' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Series Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Series Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Series Code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Series Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Series Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Series Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mobile Cellular Subscriptions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mobile Cellular Subscriptions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mobile Cellular Subscriptions</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Internet Usage Ratio</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Internet Usage Ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Internet Usage Ratio</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>548</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GDP Annual Growth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GDP Annual Growth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GDP Annual Growth</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Secondary Enrollment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Secondary Enrollment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Secondary Enrollment</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Electrical Power Consumption</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Electrical Power Consumption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Electrical Power Consumption</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>261</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>479</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.292056' group-percentage='0.154206' measure-ordering='alphabetic' measure-percentage='0.406542' parameter-percentage='0.147196' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Country Name (group)]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Asia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;Middle East&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;Latin America&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;Oceania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Dimenension Selector ' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Country&quot;'>
+          <calculation class='tableau' formula='&quot;Country&quot;' />
+        </column>
+        <column caption='Chart Type' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+          <calculation class='tableau' formula='&quot;Bar&quot;' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight1' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Online Learning' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Country Name,v_Field_Selector,v_Region' />
+        <param name='target' value='Online Learning' />
+      </command>
+    </action>
+    <action caption='Highlight2' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Online Learning Growth' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='v_Field_Selector,v_Region' />
+        <param name='target' value='Online Learning Growth' />
+      </command>
+    </action>
+    <nav-action caption='Next Page' name='[Action1]'>
+      <activation type='on-select' />
+      <source dashboard='Online Learning' type='sheet' worksheet='Bttn_NextPage' />
+      <params>
+        <param name='sheet' value='Online Learning Growth' />
+        <param name='single-select' value='' />
+      </params>
+    </nav-action>
+    <nav-action caption='GoToSheet1' name='[Action2]'>
+      <activation type='on-select' />
+      <source dashboard='Online Learning Growth' type='sheet' worksheet='Bttn_PreviousPage' />
+      <params>
+        <param name='sheet' value='Online Learning' />
+        <param name='single-select' value='' />
+      </params>
+    </nav-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Bttn_NextPage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='Ranking' datatype='real' name='[Calculation_2098395973372608512]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg(1)' />
+            </column>
+            <column-instance column='[Calculation_2098395973372608512]' derivation='User' name='[usr:Calculation_2098395973372608512:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='22' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[usr:Calculation_2098395973372608512:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='15'>Next</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5F226CAE-B7B5-4648-9B9E-AB1C7D66A6A9}' />
+    </worksheet>
+    <worksheet name='Bttn_PreviousPage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='Ranking' datatype='real' name='[Calculation_2098395973372608512]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg(1)' />
+            </column>
+            <column-instance column='[Calculation_2098395973372608512]' derivation='User' name='[usr:Calculation_2098395973372608512:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[usr:Calculation_2098395973372608512:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Æ&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='15'>Previous</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DE48AF82-7656-437F-A0C9-711DD2F4AE7C}' />
+    </worksheet>
+    <worksheet name='Internet Usage Bar'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Dimenension Selector ' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Country&quot;'>
+              <calculation class='tableau' formula='&quot;Country&quot;' />
+            </column>
+            <column caption='Chart Type' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+              <calculation class='tableau' formula='&quot;Bar&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='v_Field_Selector' datatype='string' name='[Calculation_2171579466941743108]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] =&quot;Country&quot; THEN [Country Name]&#13;&#10;ELSEIF [Parameters].[Parameter 1] =&quot;Region&quot; THEN [Country Name (group)]&#13;&#10;END' />
+            </column>
+            <column caption='v_Chart_Type' datatype='string' name='[Calculation_2171579467002929158]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 2] =&quot;Bar&quot; THEN &quot;Bar&quot;&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Map&quot; THEN &quot;Map&quot;&#13;&#10;END' />
+            </column>
+            <column caption='v_Region' datatype='string' name='[Country Name (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+                <bin default-name='false' value='&quot;Asia&quot;'>
+                  <value>&quot;China&quot;</value>
+                  <value>&quot;India&quot;</value>
+                  <value>&quot;Japan&quot;</value>
+                  <value>&quot;Russian Federation&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Europe&quot;'>
+                  <value>&quot;France&quot;</value>
+                  <value>&quot;Germany&quot;</value>
+                  <value>&quot;Italy&quot;</value>
+                  <value>&quot;Netherlands&quot;</value>
+                  <value>&quot;Spain&quot;</value>
+                  <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;United Kingdom&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Latin America&quot;'>
+                  <value>&quot;Argentina&quot;</value>
+                  <value>&quot;Brazil&quot;</value>
+                  <value>&quot;Mexico&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle East&quot;'>
+                  <value>&quot;Saudi Arabia&quot;</value>
+                  <value>&quot;Turkey&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;North America&quot;'>
+                  <value>&quot;United States&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Oceania&quot;'>
+                  <value>&quot;Australia&quot;</value>
+                  <value>&quot;Indonesia&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Internet Usage Ratio]' role='measure' type='quantitative' />
+            <column-instance column='[Internet Usage Ratio]' derivation='Avg' name='[avg:Internet Usage Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2171579466941743108]' derivation='None' name='[none:Calculation_2171579466941743108:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2171579467002929158]' derivation='None' name='[none:Calculation_2171579467002929158:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579467002929158:nk]'>
+            <groupfilter function='member' level='[none:Calculation_2171579467002929158:nk]' member='&quot;Bar&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579467002929158:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='160' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='Region'>
+              <formatted-text>
+                <run>Region</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='font-family' value='Franklin Gothic Medium' />
+            <format attr='font-size' value='10' />
+            <format attr='title' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='Region'>
+              <formatted-text>
+                <run bold='false'>Region</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' />
+            </encodings>
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Region:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Country/Region:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Avg. Internet Usage Ratio:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]</rows>
+        <cols>([federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk] / [federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)])</cols>
+      </table>
+      <simple-id uuid='{9C709C47-C9C5-489A-8D88-AF51276D1122}' />
+    </worksheet>
+    <worksheet name='Internet Usage Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Chart Type' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+              <calculation class='tableau' formula='&quot;Bar&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='v_Chart_Type' datatype='string' name='[Calculation_2171579467002929158]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 2] =&quot;Bar&quot; THEN &quot;Bar&quot;&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Map&quot; THEN &quot;Map&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Internet Usage Ratio]' role='measure' type='quantitative' />
+            <column-instance column='[Internet Usage Ratio]' derivation='Avg' name='[avg:Internet Usage Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2171579467002929158]' derivation='None' name='[none:Calculation_2171579467002929158:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579467002929158:nk]'>
+            <groupfilter function='member' level='[none:Calculation_2171579467002929158:nk]' member='&quot;Map&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579467002929158:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+            <encoding attr='space' class='0' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Longitude (generated)]' field-type='quantitative' max='49546282.85633532' min='9094503.2810249273' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Latitude (generated)]' field-type='quantitative' max='18150611.224907506' min='-15819512.96864515' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' value='Country ' />
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='font-family' value='Franklin Gothic Medium' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' />
+              <lod column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' />
+              <color column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' />
+              <geometry column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Latitude (generated)]</rows>
+        <cols>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BE6A18D5-56EC-4F74-B356-B1A49C5812DA}' />
+    </worksheet>
+    <worksheet name='Internet Usage Page'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Dimenension Selector ' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Country&quot;'>
+              <calculation class='tableau' formula='&quot;Country&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='v_Field_Selector' datatype='string' name='[Calculation_2171579466941743108]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] =&quot;Country&quot; THEN [Country Name]&#13;&#10;ELSEIF [Parameters].[Parameter 1] =&quot;Region&quot; THEN [Country Name (group)]&#13;&#10;END' />
+            </column>
+            <column caption='v_Region' datatype='string' name='[Country Name (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+                <bin default-name='false' value='&quot;Asia&quot;'>
+                  <value>&quot;China&quot;</value>
+                  <value>&quot;India&quot;</value>
+                  <value>&quot;Japan&quot;</value>
+                  <value>&quot;Russian Federation&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Europe&quot;'>
+                  <value>&quot;France&quot;</value>
+                  <value>&quot;Germany&quot;</value>
+                  <value>&quot;Italy&quot;</value>
+                  <value>&quot;Netherlands&quot;</value>
+                  <value>&quot;Spain&quot;</value>
+                  <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;United Kingdom&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Latin America&quot;'>
+                  <value>&quot;Argentina&quot;</value>
+                  <value>&quot;Brazil&quot;</value>
+                  <value>&quot;Mexico&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle East&quot;'>
+                  <value>&quot;Saudi Arabia&quot;</value>
+                  <value>&quot;Turkey&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;North America&quot;'>
+                  <value>&quot;United States&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Oceania&quot;'>
+                  <value>&quot;Australia&quot;</value>
+                  <value>&quot;Indonesia&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Internet Usage Ratio]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mobile Cellular Subscriptions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Internet Usage Ratio]' derivation='Avg' name='[avg:Internet Usage Ratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mobile Cellular Subscriptions]' derivation='Avg' name='[avg:Mobile Cellular Subscriptions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2171579466941743108]' derivation='None' name='[none:Calculation_2171579466941743108:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#d4d4d4' />
+            <format attr='fill-above' id='refline1' value='#e6e6e6' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='148' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='Region '>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='11'>Region </run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='page-card-title'>
+            <format attr='title' value='Year'>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='11'>Year</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' />
+              <lod column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Mobile Cellular Subscriptions:qk]' enable-instant-analytics='false' formula='average' id='refline0' label-type='none' probability='95' scope='per-pane' tooltip-type='none' value-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Mobile Cellular Subscriptions:qk]' z-order='3' />
+            <reference-line axis-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' enable-instant-analytics='false' formula='average' id='refline1' label='Avg:&lt;Value&gt;' label-type='custom' probability='95' scope='per-pane' value-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Mobile Cellular Subscriptions:qk]' enable-instant-analytics='false' formula='average' id='refline2' label='Avg:&lt;Value&gt;' label-type='custom' probability='95' scope='per-pane' value-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Mobile Cellular Subscriptions:qk]' z-order='2' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Region:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Country / Region:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Year:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Avg. Internet Usage Ratio:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Avg. Mobile Cellular Subscriptions:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Mobile Cellular Subscriptions:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Mobile Cellular Subscriptions:qk]</rows>
+        <cols>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]</cols>
+        <pages>
+          <column>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]</column>
+        </pages>
+        <page-trail-options lines='true' />
+      </table>
+      <simple-id uuid='{49BE072F-1D9C-4504-A82E-FBD737232856}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='Ratio' datatype='real' name='[Calculation_2171579466926657537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='sum([Mobile Cellular Subscriptions])/sum([Internet Usage Ratio])' />
+            </column>
+            <column caption='v_Region' datatype='string' name='[Country Name (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+                <bin default-name='false' value='&quot;Asia&quot;'>
+                  <value>&quot;China&quot;</value>
+                  <value>&quot;India&quot;</value>
+                  <value>&quot;Japan&quot;</value>
+                  <value>&quot;Russian Federation&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Europe&quot;'>
+                  <value>&quot;France&quot;</value>
+                  <value>&quot;Germany&quot;</value>
+                  <value>&quot;Italy&quot;</value>
+                  <value>&quot;Netherlands&quot;</value>
+                  <value>&quot;Spain&quot;</value>
+                  <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;United Kingdom&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Latin America&quot;'>
+                  <value>&quot;Argentina&quot;</value>
+                  <value>&quot;Brazil&quot;</value>
+                  <value>&quot;Mexico&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle East&quot;'>
+                  <value>&quot;Saudi Arabia&quot;</value>
+                  <value>&quot;Turkey&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;North America&quot;'>
+                  <value>&quot;United States&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Oceania&quot;'>
+                  <value>&quot;Australia&quot;</value>
+                  <value>&quot;Indonesia&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Internet Usage Ratio]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mobile Cellular Subscriptions]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2171579466926657537]' derivation='User' name='[usr:Calculation_2171579466926657537:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Set 3]' />
+          <slices>
+            <column>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Set 3]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Region:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Country:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Ratio:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[usr:Calculation_2171579466926657537:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</rows>
+        <cols>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[usr:Calculation_2171579466926657537:qk]</cols>
+      </table>
+      <simple-id uuid='{3B0093E7-43B3-4AE4-B4A7-110B30F29190}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+            <column caption='v_Region' datatype='string' name='[Country Name (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+                <bin default-name='false' value='&quot;Asia&quot;'>
+                  <value>&quot;China&quot;</value>
+                  <value>&quot;India&quot;</value>
+                  <value>&quot;Japan&quot;</value>
+                  <value>&quot;Russian Federation&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Europe&quot;'>
+                  <value>&quot;France&quot;</value>
+                  <value>&quot;Germany&quot;</value>
+                  <value>&quot;Italy&quot;</value>
+                  <value>&quot;Netherlands&quot;</value>
+                  <value>&quot;Spain&quot;</value>
+                  <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;United Kingdom&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Latin America&quot;'>
+                  <value>&quot;Argentina&quot;</value>
+                  <value>&quot;Brazil&quot;</value>
+                  <value>&quot;Mexico&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Middle East&quot;'>
+                  <value>&quot;Saudi Arabia&quot;</value>
+                  <value>&quot;Turkey&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;North America&quot;'>
+                  <value>&quot;United States&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Oceania&quot;'>
+                  <value>&quot;Australia&quot;</value>
+                  <value>&quot;Indonesia&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Internet Usage Ratio]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Internet Usage Ratio]' derivation='Sum' name='[sum:Internet Usage Ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='150' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='Region' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' value='Region'>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='12'>Region</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' value='Country'>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='12'>Country</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]' value='Year'>
+              <formatted-text>
+                <run fontname='Franklin Gothic Medium' fontsize='12'>Year</run>
+              </formatted-text>
+            </format>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' />
+              <lod column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[sum:Internet Usage Ratio:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[sum:Internet Usage Ratio:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Region:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Country Name:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Year:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Franklin Gothic Medium' fontsize='12'>Internet Usage Ratio:&#9;</run>
+                <run bold='true' fontname='Franklin Gothic Medium' fontsize='12'>&lt;[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[sum:Internet Usage Ratio:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[sum:Internet Usage Ratio:qk]</rows>
+        <cols>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{E2E4CADA-0B68-4639-8D9D-A98742EF80CC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Online Learning'>
+      <style>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#ddebf0' />
+        </style-rule>
+        <style-rule element='parameter-ctrl'>
+          <format attr='background-color' value='#e6e6e6' />
+        </style-rule>
+        <style-rule element='parameter-ctrl-title'>
+          <format attr='font-family' value='Franklin Gothic Medium' />
+          <format attr='font-size' value='10' />
+          <format attr='font-weight' value='normal' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Sheet1 (Revised)' name='federated.0ylg1pl0933pxs19i5h5a09s3tm1' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Dimenension Selector ' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Country&quot;'>
+          <calculation class='tableau' formula='&quot;Country&quot;' />
+          <members>
+            <member value='&quot;Country&quot;' />
+            <member value='&quot;Region &quot;' />
+          </members>
+        </column>
+        <column caption='Chart Type' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Bar&quot;'>
+          <calculation class='tableau' formula='&quot;Bar&quot;' />
+          <members>
+            <member value='&quot;Bar&quot;' />
+            <member value='&quot;Map&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.0ylg1pl0933pxs19i5h5a09s3tm1'>
+        <column caption='v_Region' datatype='string' name='[Country Name (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+          <calculation class='categorical-bin' column='[Country Name]' new-bin='true'>
+            <bin default-name='false' value='&quot;Asia&quot;'>
+              <value>&quot;China&quot;</value>
+              <value>&quot;India&quot;</value>
+              <value>&quot;Japan&quot;</value>
+              <value>&quot;Russian Federation&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Europe&quot;'>
+              <value>&quot;France&quot;</value>
+              <value>&quot;Germany&quot;</value>
+              <value>&quot;Italy&quot;</value>
+              <value>&quot;Netherlands&quot;</value>
+              <value>&quot;Spain&quot;</value>
+              <value>&quot;Switzerland&quot;</value>
+              <value>&quot;United Kingdom&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Latin America&quot;'>
+              <value>&quot;Argentina&quot;</value>
+              <value>&quot;Brazil&quot;</value>
+              <value>&quot;Mexico&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Middle East&quot;'>
+              <value>&quot;Saudi Arabia&quot;</value>
+              <value>&quot;Turkey&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;North America&quot;'>
+              <value>&quot;United States&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Oceania&quot;'>
+              <value>&quot;Australia&quot;</value>
+              <value>&quot;Indonesia&quot;</value>
+            </bin>
+          </calculation>
+        </column>
+        <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='integer' name='[Year]' role='measure' type='quantitative' />
+        <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94000' id='60' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='94000' id='56' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='94000' id='53' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='94000' id='50' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                  <zone h='94000' id='47' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                    <zone h='94000' id='43' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                      <zone h='94000' id='40' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                        <zone h='94000' id='36' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                          <zone h='94000' id='34' type='layout-basic' w='98400' x='800' y='1000'>
+                            <zone h='94000' id='10' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+                              <zone h='94000' id='8' type='layout-basic' w='98400' x='800' y='1000'>
+                                <zone forceUpdate='true' h='17375' id='3' type='text' w='98400' x='800' y='1000'>
+                                  <formatted-text>
+                                    <run fontalignment='1' fontname='Franklin Gothic Medium' fontsize='36'>Online Learning Growth </run>
+                                  </formatted-text>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='55750' id='5' param='vert' type='layout-flow' w='98400' x='800' y='39250'>
+                                  <zone h='55750' id='12' param='horz' type='layout-flow' w='98400' x='800' y='39250'>
+                                    <zone fixed-size='527' h='55750' id='15' is-fixed='true' param='horz' type='layout-flow' w='52700' x='800' y='39250'>
+                                      <zone h='55750' id='7' name='Internet Usage Bar' show-title='false' w='52586' x='800' y='39250'>
+                                        <layout-cache cell-count-w='19' minheight='201' non-cell-size-w='52' type-h='scalable' type-w='cell' />
+                                        <zone-style>
+                                          <format attr='border-color' value='#000000' />
+                                          <format attr='border-style' value='none' />
+                                          <format attr='border-width' value='0' />
+                                          <format attr='margin' value='4' />
+                                        </zone-style>
+                                      </zone>
+                                      <zone h='55750' id='41' name='Internet Usage Map' show-title='false' w='100' x='53386' y='39250'>
+                                        <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='1' maxwidth='1' minheight='1' minwidth='1' type-h='scalable' type-w='scalable' />
+                                        <zone-style>
+                                          <format attr='border-color' value='#000000' />
+                                          <format attr='border-style' value='none' />
+                                          <format attr='border-width' value='0' />
+                                          <format attr='margin' value='4' />
+                                        </zone-style>
+                                      </zone>
+                                    </zone>
+                                    <zone h='55750' id='16' param='vert' type='layout-flow' w='45695' x='53500' y='39250'>
+                                      <zone h='55750' id='13' name='Sheet 3' show-title='false' w='45695' x='53500' y='39250'>
+                                        <layout-cache minheight='140' type-h='scalable' type-w='cell' />
+                                        <zone-style>
+                                          <format attr='border-color' value='#000000' />
+                                          <format attr='border-style' value='none' />
+                                          <format attr='border-width' value='0' />
+                                          <format attr='margin' value='4' />
+                                        </zone-style>
+                                      </zone>
+                                    </zone>
+                                  </zone>
+                                </zone>
+                                <zone forceUpdate='true' h='4875' id='24' type='text' w='98400' x='800' y='30375'>
+                                  <formatted-text>
+                                    <run fontcolor='#ffffff' fontname='Franklin Gothic Medium' fontsize='14'>Internet Users - Growth of Internet Users per 100 people by Country and Region</run>
+                                  </formatted-text>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                    <format attr='background-color' value='#000000' />
+                                  </zone-style>
+                                </zone>
+                                <zone forceUpdate='true' h='7967' id='21' type='text' w='17000' x='800' y='18375'>
+                                  <formatted-text>
+                                    <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='15'>Filters</run>
+                                  </formatted-text>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                    <format attr='background-color' value='#e6e6e6' />
+                                  </zone-style>
+                                </zone>
+                                <zone custom-title='true' h='4033' id='45' mode='compact' param='[Parameters].[Parameter 2]' type='paramctrl' w='24200' x='75000' y='26342'>
+                                  <formatted-text>
+                                    <run>Chart Type</run>
+                                  </formatted-text>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='4000' id='48' name='Sheet 3' pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' w='98400' x='800' y='35250'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='7967' id='51' mode='dropdown' name='Sheet 3' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' type='filter' values='relevant' w='21000' x='17800' y='18375'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='7967' id='54' mode='dropdown' name='Sheet 3' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]' type='filter' values='relevant' w='24200' x='75000' y='18375'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='7967' id='57' mode='dropdown' name='Sheet 3' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='filter' values='relevant' w='36200' x='38800' y='18375'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone forceUpdate='true' h='4033' id='77' type='text' w='38000' x='800' y='26342'>
+                                  <formatted-text>
+                                    <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='15'>Chart View Selector</run>
+                                  </formatted-text>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                    <format attr='background-color' value='#e6e6e6' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='4033' id='37' mode='compact' param='[Parameters].[Parameter 1]' show-title='false' type='paramctrl' w='36200' x='38800' y='26342'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                    <format attr='background-color' value='#e6e6e6' />
+                                  </zone-style>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='4000' id='65' param='horz' type='layout-flow' w='98400' x='800' y='95000'>
+            <zone h='4000' id='27' type='text' w='90500' x='800' y='95000'>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10'>Source: </run>
+                <run auto-url='true' fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://datacatalog.worldbank.org/dataset/world-development-indicators&amp;quot;'>https://datacatalog.worldbank.org/dataset/world-development-indicators</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='71' h='4000' id='66' is-fixed='true' name='Bttn_NextPage' show-title='false' w='7900' x='91300' y='95000'>
+              <layout-cache type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='110' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='111' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='17375' id='3' type='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Franklin Gothic Medium' fontsize='36'>Online Learning Growth </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7967' id='21' type='text' w='17000' x='800' y='18375'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='15'>Filters</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4033' id='77' type='text' w='38000' x='800' y='26342'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='15'>Chart View Selector</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone h='4033' id='37' mode='compact' param='[Parameters].[Parameter 1]' show-title='false' type='paramctrl' w='36200' x='38800' y='26342'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='4033' id='45' mode='compact' param='[Parameters].[Parameter 2]' type='paramctrl' w='24200' x='75000' y='26342'>
+                  <formatted-text>
+                    <run>Chart Type</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4875' id='24' type='text' w='98400' x='800' y='30375'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Franklin Gothic Medium' fontsize='14'>Internet Users - Growth of Internet Users per 100 people by Country and Region</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55750' id='7' is-fixed='true' name='Internet Usage Bar' show-title='false' w='52586' x='800' y='39250'>
+                  <layout-cache cell-count-w='19' minheight='201' non-cell-size-w='52' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55750' id='41' is-fixed='true' name='Internet Usage Map' show-title='false' w='100' x='53386' y='39250'>
+                  <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='1' maxwidth='1' minheight='1' minwidth='1' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7967' id='51' mode='dropdown' name='Sheet 3' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]' type='filter' values='relevant' w='21000' x='17800' y='18375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7967' id='54' mode='dropdown' name='Sheet 3' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]' type='filter' values='relevant' w='24200' x='75000' y='18375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7967' id='57' mode='dropdown' name='Sheet 3' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='filter' values='relevant' w='36200' x='38800' y='18375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55750' id='13' is-fixed='true' name='Sheet 3' show-title='false' w='45695' x='53500' y='39250'>
+                  <layout-cache minheight='140' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4000' id='48' name='Sheet 3' pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' w='98400' x='800' y='35250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4000' id='27' type='text' w='90500' x='800' y='95000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10'>Source: </run>
+                    <run auto-url='true' fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://datacatalog.worldbank.org/dataset/world-development-indicators&amp;quot;'>https://datacatalog.worldbank.org/dataset/world-development-indicators</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='24' h='4000' id='66' is-fixed='true' name='Bttn_NextPage' show-title='false' w='7900' x='91300' y='95000'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FE59E56A-CFD9-42BD-B793-2616F389AB47}' />
+    </dashboard>
+    <dashboard name='Online Learning Growth'>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='border-style' value='dotted' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='93374' id='15' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='93374' id='13' type='layout-basic' w='98400' x='800' y='1000'>
+              <zone forceUpdate='true' h='17248' id='3' type='text' w='98400' x='800' y='1000'>
+                <formatted-text>
+                  <run fontalignment='1' fontname='Franklin Gothic Medium' fontsize='36'>Online Learning Up and Comers  </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='4376' id='10' type='text' w='98400' x='800' y='18248'>
+                <formatted-text>
+                  <run fontcolor='#ffffff' fontname='Franklin Gothic Medium' fontsize='14'>Up and Comers - Where do we expect to see future growth? </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+              <zone h='33250' id='18' param='vert' type='layout-flow' w='98400' x='800' y='61124'>
+                <zone fixed-size='44' h='5500' id='14' is-fixed='true' param='vert' type='layout-flow' w='98400' x='800' y='61124'>
+                  <zone dropdown='1' fixed-size='40' h='5500' id='17' is-fixed='true' name='Internet Usage Page' slider='0' synchronized='1' trailctrls='0' type='currpage' w='98400' x='800' y='61124'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='27750' id='12' name='Internet Usage Page' show-title='false' w='98400' x='800' y='66624'>
+                  <layout-cache minheight='155' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='4249' id='16' leg-item-layout='horz' name='Internet Usage Page' pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' w='98400' x='800' y='22624'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28875' id='60' param='vert' type='layout-flow' w='98400' x='800' y='26873'>
+                <zone forceUpdate='true' h='5750' id='9' type='text' w='98400' x='800' y='26873'>
+                  <formatted-text>
+                    <run fontname='Franklin Gothic Medium' fontsize='12'>Ratio - There is a strong relationship between mobile phone subscriptions and rising Internet usage. These countries have a higher than average ratio and would be expected to see faster rising Internet usage. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#f5f5f5' />
+                  </zone-style>
+                </zone>
+                <zone h='23125' id='8' name='Sheet 2' show-title='false' w='98400' x='800' y='32623'>
+                  <layout-cache fixed-size-h='195' minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='5376' id='61' param='horz' type='layout-flow' w='98400' x='800' y='55748'>
+                <zone forceUpdate='true' h='5376' id='24' type='text' w='98400' x='800' y='55748'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Franklin Gothic Medium' fontsize='13'>Internet and Mobile Phone Trend: Click the Play button to see who it has changed</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='4626' id='20' type='text' w='86799' x='800' y='94374'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10'>Source: </run>
+              <run auto-url='true' fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://datacatalog.worldbank.org/dataset/world-development-indicators&amp;quot;'>https://datacatalog.worldbank.org/dataset/world-development-indicators</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4626' id='21' name='Bttn_PreviousPage' show-title='false' w='11601' x='87599' y='94374'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='68' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='69' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='17248' id='3' type='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Franklin Gothic Medium' fontsize='36'>Online Learning Up and Comers  </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4376' id='10' type='text' w='98400' x='800' y='18248'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Franklin Gothic Medium' fontsize='14'>Up and Comers - Where do we expect to see future growth? </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5750' id='9' type='text' w='98400' x='800' y='26873'>
+                  <formatted-text>
+                    <run fontname='Franklin Gothic Medium' fontsize='12'>Ratio - There is a strong relationship between mobile phone subscriptions and rising Internet usage. These countries have a higher than average ratio and would be expected to see faster rising Internet usage. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5f5f5' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='177' h='23125' id='8' is-fixed='true' name='Sheet 2' show-title='false' w='98400' x='800' y='32623'>
+                  <layout-cache fixed-size-h='195' minwidth='220' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5376' id='24' type='text' w='98400' x='800' y='55748'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Franklin Gothic Medium' fontsize='13'>Internet and Mobile Phone Trend: Click the Play button to see who it has changed</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='27750' id='12' is-fixed='true' name='Internet Usage Page' show-title='false' w='98400' x='800' y='66624'>
+                  <layout-cache minheight='155' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4249' id='16' leg-item-layout='horz' name='Internet Usage Page' pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' w='98400' x='800' y='22624'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4626' id='20' type='text' w='86799' x='800' y='94374'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10'>Source: </run>
+                    <run auto-url='true' fontcolor='#000000' fontname='Franklin Gothic Medium' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://datacatalog.worldbank.org/dataset/world-development-indicators&amp;quot;'>https://datacatalog.worldbank.org/dataset/world-development-indicators</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='29' h='4626' id='21' is-fixed='true' name='Bttn_PreviousPage' show-title='false' w='11601' x='87599' y='94374'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone dropdown='1' fixed-size='40' h='5500' id='17' name='Internet Usage Page' slider='0' synchronized='1' trailctrls='0' type='currpage' w='98400' x='800' y='61124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5080088E-7A6E-476D-B15E-D18C4C3BC0F0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Online Learning'>
+      <viewpoints>
+        <viewpoint name='Bttn_NextPage'>
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[usr:Calculation_2098395973372608512:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>1.0</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Internet Usage Bar'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466928136194:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Internet Usage Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{11AF1DA4-4FB7-463D-B54C-85504450DF61}' />
+    </window>
+    <window class='dashboard' name='Online Learning Growth'>
+      <viewpoints>
+        <viewpoint name='Bttn_PreviousPage' />
+        <viewpoint name='Internet Usage Page'>
+          <current-page>
+            <multibucket>
+              <bucket>2008</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8D9AB6A1-1A3F-4D7E-AF92-376AA23A9C67}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Bttn_NextPage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{64FB429E-4CAB-41C3-BB03-A4BA37F7AA8F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Bttn_PreviousPage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ECB52EB9-E679-42BD-AEA7-EE3D9F9EB2A1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Internet Usage Bar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>%null%</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466928136194:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579467002929158:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name (copy):nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Series Name:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[sum:Internet Usage Ratio:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{48FAFB06-D88C-4ADE-8FE2-174DC045E64F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Internet Usage Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[avg:Internet Usage Ratio:qk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466928136194:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579467002929158:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name (copy):nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Series Name:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{25EDC016-FA11-46A9-A934-0C43E9CF2A94}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Internet Usage Page'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='currpage' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>2005</bucket>
+          </multibucket>
+        </current-page>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466941743108:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A5A18E2F-B573-48CC-914B-BE0276C35BBE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Set 1]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Set 3]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[v_Region (copy)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95360231-D9FF-46A2-A469-93FAE41DC179}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[Country Name (group)]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Calculation_2171579466928136194:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Country Name:nk]</field>
+            <field>[federated.0ylg1pl0933pxs19i5h5a09s3tm1].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1AA68404-B3EF-4001-A63F-91156528AB40}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Online Learning' width='192'>
+      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
+      HQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Online Learning Growth' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

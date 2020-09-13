@@ -1,0 +1,10 @@
+{
+  "World_Bank":{
+    "homedir": "C:/Users/name-of-your-computer/Desktop/COPPER.RIVER/World_Bank_Dash",
+    "datafile":"Data_Extract_From_World_Development_Indicators (7).xlsx",
+    "filetype":"/*.xlsx",
+    "sheet_name":"Data Revised"
+	
+ }
+}
+
