@@ -1,5 +1,5 @@
 # Future of Online Learning Dashboard
-Created python automatic etl pipeline script for loading and cleaning data used for the creation of two interactive Tableau dashboards. The first dashboard displays the trends in online learning by region and country. While the second dashboard shows the future demand for online learning. The user is then able to go back and forth from the first and second dashboard with navigation buttons. Also, the users is able to filter each visual by color, region, and country name.   
+This project includes a python etl pipeline script for loading and cleaning data automatically using a configuration json file, and one .twb file that includes two interactive Tableau dashboards using the revised excel file created by the python etl script. The first dashboard displays the trends in online learning by region and country. While the second dashboard shows the future demand for online learning. The user is then able to go back and forth from the first and second dashboard with navigation buttons. Also, the users is able to filter each visual by color, region, and country name.   
 Online learning Tableau dashboard, (https://public.tableau.com/profile/jessica.spencer6802#!/vizhome/FutureofOnlineLearning_15992334579770/OnlineLearning/).
 
 ## Code:
